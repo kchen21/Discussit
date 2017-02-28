@@ -26,7 +26,7 @@ class User < ApplicationRecord
   end
 
   def self.generate_session_token
-    SecureRandom.url_safe_base64(16)
+    SecureRandom.urlsafe_base64(16)
   end
 
   def password=(password)
