@@ -9,7 +9,6 @@ def SubforumsController < ApplicationController
   def create
     @subforum = current_user.subforums.new(subforum_params)
 
-
     if @subforum.save
       redirect_to subforum_url(@subforum)
     else
@@ -42,6 +41,9 @@ def SubforumsController < ApplicationController
   end
 
   def destroy
+    @subforum = Subforum.find(params[:id])
+    @subforum.delete
+    redirect_to subforums_url
   end
 
   private
