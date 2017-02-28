@@ -11,6 +11,7 @@
 #
 
 class Subforum < ApplicationRecord
+  validates :title, :moderator, presence: true
 
   belongs_to(
     :moderator,
