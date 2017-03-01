@@ -1,0 +1,19 @@
+<!-- for updating or creating a subforum -->
+
+<% action_url = subforum.persisted? ? subforum_url(subforum) : subforums_url %>
+<% http_method = subforum.persisted? ? "PATCH" : "POST" %>
+
+<form name="<%= action_url %>" method="POST">
+  <%= auth_token %>
+  <input type="hidden" name="_method" value="<%= http_method %>">
+
+  <label for="title">Title</label>
+  <input id="title" name="subforum[title]" value="<%= subforum.title %>">
+
+  <br>
+
+  <label for="form-description">Description</label>
+  <textarea id="description" name="subforum[description]"><%= subforum.description %></textarea>
+
+  <input type="submit" value="Submit">
+</form>
