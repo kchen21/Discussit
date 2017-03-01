@@ -11,14 +11,14 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in(@user)
-      redirect_to user_url(@user)
+      redirect_to subforums_url
     else
       flash.now[:errors] = @user.errors.full_messages
       render :new
     end
   end
 
-  def show
+  def edit
     @user = current_user
   end
 
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     @user = current_user
 
     if @user.update(user_params)
-      redirect_to user_url(@user)
+      redirect_to subforums_url
     else
       flash.now[:errors] = @user.errors.full_messages
       render :show
