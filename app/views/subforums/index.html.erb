@@ -1,1 +1,10 @@
-<h2></h2>
+<h2>Subforums</h2>
+
+<ul>
+  <% subforums.each do |subforum| %>
+    <li>
+      <%= link_to subforum.title, subforum_url(subforum) %>
+      <br>
+    </li>
+  <% end %>
+</ul>
