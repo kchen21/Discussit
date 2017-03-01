@@ -12,6 +12,7 @@
     <nav>
       <% if logged_in? %>
         <%= "Welcome, " + current_user.first_name + "!" %>
+        <%= link_to "Update account", edit_user_url(current_user) %>
         <%= button_to "Log out", session_url, method: :delete %>
       <% else %>
         <%= link_to "Log in", new_session_url %>
