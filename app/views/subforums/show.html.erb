@@ -1,7 +1,9 @@
+<% description = @subforum.description %>
+
 <h2><%= @subforum.title %></h2>
 
 <h3>Description</h3>
-<p><%= @subforum.description %></p>
+<p><%= description == "" ? "None" : description %></p>
 
 <%= render "shared/errors" %>
 
