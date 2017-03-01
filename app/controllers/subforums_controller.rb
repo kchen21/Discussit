@@ -1,4 +1,4 @@
-def SubforumsController < ApplicationController
+class SubforumsController < ApplicationController
   before_action :require_logged_in, only: [:create, :new, :edit, :update, :destroy]
   before_action :require_current_user_owns_subforum, only: [:edit, :update, :destroy]
 

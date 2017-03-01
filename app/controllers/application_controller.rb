@@ -28,6 +28,6 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logged_out
-    redirect to user_url(current_user) if current_user
+    redirect_to subforums_url if current_user
   end
 end
