@@ -1,1 +1,19 @@
+<h2>Update Account Details</h2>
 
+<%= render "shared/errors" %>
+
+<form class="account-update-form" action="<%= user_url(@user) %>" method="POST">
+  <%= auth_token %>
+  <input type="hidden" name="_method" value="PATCH">
+
+  <label for="first-name">First name</label>
+  <input id="first-name" type="text" name="user[first_name]" value="<%= @user.first_name %>">
+
+  <label for="last-name">Last name</label>
+  <input id="last-name" type="text" name="user[last_name]" value="<%= @user.last_name %>">
+
+  <label for="email">Email</label>
+  <input id="email" type="text" name="user[email]" value="<%= @user.email %>">
+
+  <input type="submit" value="Update account">
+</form>

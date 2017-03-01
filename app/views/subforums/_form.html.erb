@@ -8,12 +8,12 @@
   <input type="hidden" name="_method" value="<%= http_method %>">
 
   <label for="title">Title</label>
-  <input id="title" name="subforum[title]" value="<%= subforum.title %>">
+  <input id="title" type="text" name="subforum[title]" value="<%= subforum.title %>">
 
   <br>
 
   <label for="form-description">Description</label>
-  <textarea id="description" name="subforum[description]"><%= subforum.description %></textarea>
+  <textarea id="description" type="text" name="subforum[description]"><%= subforum.description %></textarea>
 
   <input type="submit" value="Submit">
 </form>
