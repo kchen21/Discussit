@@ -24,7 +24,6 @@ class PostsController < ApplicationController
   def edit
     @post = Post.find(params[:id])
     @subforum = Subforum.find_by(id: params[:subforum_id])
-    debugger
   end
 
   def show

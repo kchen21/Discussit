@@ -1,5 +1,4 @@
 <h2>Edit Post</h2>
-<%= button_to "Delete", subforum_post_url(@post.subforum_id, @post), method: :delete %>
 <p>Subforum: <%= @subforum.title %></p>
 
 <%= render "form", post: @post %>
