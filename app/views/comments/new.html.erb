@@ -1,0 +1,10 @@
+<h2>New Comment</h2>
+<p>Subforum: <%= @subforum.title %></p>
+
+<h3>Post<h3>
+<p><%= @post.title %></p>
+<p><%= @post.url %></p>
+<p><%= @post.body %></p>
+
+<%= render "form", comment: @comment %>
+<%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
