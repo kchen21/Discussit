@@ -14,7 +14,8 @@
 <ul>
   <% @subforum.posts.each do |post| %>
     <li>
-      <%= link_to post.title, subforum_post_url(post) %>
+      <%= link_to post.title, subforum_post_url(post.subforum_id, post) %>
+      <%= post.author.username %>
     </li>
   <% end %>
 </ul>
