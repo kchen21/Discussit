@@ -22,7 +22,7 @@ class Comment < ApplicationRecord
 
   belongs_to :post
 
-  belongs_to(
+  has_one(
     :subforum,
     through: :post,
     source: :subforum

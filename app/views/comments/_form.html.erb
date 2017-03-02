@@ -1,7 +1,7 @@
 <!-- for updating and creating comments -->
 
 <% action_url = comment.persisted? ? subforum_post_comment_url(comment) : subforum_post_comments_url %>
-<% http_method = comment.persisted? ? "PATCH", "POST" %>
+<% http_method = comment.persisted? ? "PATCH" : "POST" %>
 
 <% render "shared/errors" %>
 

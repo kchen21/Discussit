@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :require_logged_in, :only: [:create, :new, :edit, :update, :destroy]
+  before_action :require_logged_in, only: [:create, :new, :edit, :update, :destroy]
   before_action :require_current_user_owns_comment, only: [:edit, :update, :destroy]
 
   def create
@@ -23,13 +23,13 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = Comment.new
+    @comment = Comment.find(params[:id])
     @post = Post.find_by(id: params[:post_id])
     @subforum = Subforum.find_by(id: params[:subforum_id])
   end
 
   def show
-    @comment = Comment.new
+    @comment = Comment.find(params[:id])
     @post = Post.find_by(id: params[:post_id])
     @subforum = Subforum.find_by(id: params[:subforum_id])
   end
