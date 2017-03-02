@@ -45,7 +45,7 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.delete
-    redirect_to subforum_url(@post.subforum)
+    redirect_to subforum_url(@post.subforum_id)
   end
 
   private
