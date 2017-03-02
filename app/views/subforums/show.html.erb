@@ -19,4 +19,4 @@
   <% end %>
 </ul>
 
-<%= link_to "Create a new post", new_subforum_post_url %>
+<%= link_to "Create a new post", new_subforum_post_url(subforum_id: @subforum.id) %>
