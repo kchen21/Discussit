@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170228181438) do
+ActiveRecord::Schema.define(version: 20170302002742) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title",       null: false
+    t.string   "url"
+    t.text     "body",        null: false
+    t.integer  "subforum_id", null: false
+    t.integer  "author_id",   null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["author_id"], name: "index_posts_on_author_id", using: :btree
+    t.index ["subforum_id"], name: "index_posts_on_subforum_id", using: :btree
+    t.index ["title"], name: "index_posts_on_title", unique: true, using: :btree
+  end
 
   create_table "subforums", force: :cascade do |t|
     t.string   "title",        null: false
@@ -22,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170228181438) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.index ["moderator_id"], name: "index_subforums_on_moderator_id", using: :btree
+    t.index ["title"], name: "index_subforums_on_title", unique: true, using: :btree
   end
 
   create_table "users", force: :cascade do |t|
