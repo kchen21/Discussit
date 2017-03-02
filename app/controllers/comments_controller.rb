@@ -24,14 +24,14 @@ class CommentsController < ApplicationController
 
   def edit
     @comment = Comment.find(params[:id])
-    @post = Post.find_by(id: params[:post_id])
-    @subforum = Subforum.find_by(id: params[:subforum_id])
+    @post = @comment.post
+    @subforum = @comment.subforum
   end
 
   def show
     @comment = Comment.find(params[:id])
-    @post = Post.find_by(id: params[:post_id])
-    @subforum = Subforum.find_by(id: params[:subforum_id])
+    @post = @comment.post
+    @subforum = @comment.subforum
   end
 
   def update
@@ -46,7 +46,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find[params[:id]]
+    @comment = Comment.find(params[:id])
     @comment.delete
     redirect_to subforum_post_url(params[:subforum_id], @comment.post_id)
   end

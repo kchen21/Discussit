@@ -27,4 +27,12 @@ class Comment < ApplicationRecord
     through: :post,
     source: :subforum
   )
+
+  def create_preview
+    if self.body.length > 100
+      return self.body[0..99] + "..."
+    else
+      return self.body
+    end
+  end
 end
