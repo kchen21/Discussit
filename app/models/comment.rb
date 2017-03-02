@@ -21,4 +21,10 @@ class Comment < ApplicationRecord
   )
 
   belongs_to :post
+
+  belongs_to(
+    :subforum,
+    through: :post,
+    source: :subforum
+  )
 end

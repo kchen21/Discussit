@@ -22,4 +22,10 @@ class Subforum < ApplicationRecord
   )
 
   has_many :posts
+
+  has_many(
+    :comments,
+    through: :posts,
+    source: :comments
+  )
 end
