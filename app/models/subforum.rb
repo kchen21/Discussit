@@ -22,5 +22,4 @@ class Subforum < ApplicationRecord
   )
 
   has_many :posts
-
 end
