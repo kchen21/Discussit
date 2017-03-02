@@ -21,4 +21,6 @@ class Subforum < ApplicationRecord
     class_name: :User
   )
 
+  has_many :posts
+
 end

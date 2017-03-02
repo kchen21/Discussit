@@ -27,6 +27,13 @@ class User < ApplicationRecord
     class_name: :Subforum
   )
 
+  has_many(
+    :posts,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Post
+  )
+
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     (user && user.is_password?(password)) ? user : nil
