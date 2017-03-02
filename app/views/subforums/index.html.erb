@@ -4,7 +4,7 @@
   <% @subforums.each do |subforum| %>
     <li>
       <%= link_to subforum.title, subforum_url(subforum) %>
-      <br>
+      <%= subforum.moderator.username %>
     </li>
   <% end %>
 </ul>
