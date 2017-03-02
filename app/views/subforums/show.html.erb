@@ -5,6 +5,8 @@
 <h3>Description</h3>
 <p><%= description == "" ? "None" : description %></p>
 
+<%= render "shared/errors" %>
+
 <%= link_to "Edit subforum", edit_subforum_url(@subforum) %>
 <%= link_to "See all subforums", subforums_url %>
 
