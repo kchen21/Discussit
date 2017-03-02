@@ -14,6 +14,13 @@
 <%= link_to "Go back to subforum", subforum_url(@post.subforum_id) %>
 
 <h3>Comments</h3>
+<ul>
+  <% @post.comments.each do |comment| %>
+    <li>
+      <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
+      <%= comment.author.username %>
+    </li>
+  <% end %>
+</ul>
 
-<%# TODO: Create a link to new_comment_url %>
-<%# TODO: Create a list of links to each of @post's comments %>
+<%= link_to "Write a new comment", new_subforum_post_comment_url(subforum_id: @subforum.id, post_id: @post.id) %>
