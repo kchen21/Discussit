@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @post.subforum = Subforum.find_by(id: params[:subforum_id])
 
     if @post.save
-      redirect_to post_url(@post)
+      redirect_to subforum_post_url(@post)
     else
       flash.now[:errors] = @post.errors.full_messages
       render :new
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     if @post.update(post_params)
-      redirect_to post_url(@post)
+      redirect_to subforum_post_url(@post)
     else
       flash.now[:errors] = @post.errors.full_messages
       render :edit
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
     return if current_user.posts.find_by(id: params[:id])
     @post = Post.find(params[:id])
     flash[:errors] = ["You are not the creator of this post"]
-    redirect_to post_url(@post)
+    redirect_to subforum_post_url(@post)
   end
 
   def require_current_user_owns_post_or_subforum
@@ -59,7 +59,7 @@ class PostsController < ApplicationController
     )
     @post = Post.find(params[:id])
     flash[:errors] = ["You are not the post's creator or subforum's moderator"]
-    redirect_to post_url(@post)
+    redirect_to subforum_post_url(@post)
   end
 
   def post_params

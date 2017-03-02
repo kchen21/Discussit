@@ -1,6 +1,6 @@
 <!-- for updating and creating posts -->
 
-<% action_url = post.persisted? ? post_url(post) : posts_url %>
+<% action_url = post.persisted? ? subforum_post_url(post) : subforum_posts_url %>
 <% http_method = post.persisted? ? "PATCH" : "POST" %>
 
 <%= render "shared/errors" %>
