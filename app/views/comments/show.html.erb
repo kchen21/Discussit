@@ -1,0 +1,14 @@
+<h2><%= @comment.author.username %>'s Comment<h2>
+<p>Subforum: <%= @subforum.title %></p>
+
+<h3>Post<h3>
+<p><%= @post.title %></p>
+<p><%= @post.url %></p>
+<p><%= @post.body %></p>
+
+<h3>Comment</h3>
+<p><%= @comment.body %></p>
+
+<h3>Responses</h3>
+
+<%# TODO: Create a list of links to each of @comment's comments %>
