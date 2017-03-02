@@ -5,7 +5,7 @@
 <label for="url">URL</label>
 <p id="url"><%= url == "" ? "None" : url %></p>
 
-<%= @post.body %>
+<p><%= @post.body %><p>
 
 <%= link_to "Edit post", edit_subforum_post_url(@post) %>
 <%= link_to "Go back to subforum", subforum_url(@post.subforum_id) %>
