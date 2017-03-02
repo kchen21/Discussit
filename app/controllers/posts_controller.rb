@@ -23,12 +23,12 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    @subforum = Subforum.find_by(id: params[:subforum_id])
+    @subforum = @post.subforum
   end
 
   def show
     @post = Post.find(params[:id])
-    @subforum = Subforum.find_by(id: params[:subforum_id])
+    @subforum = @post.subforum
   end
 
   def update
