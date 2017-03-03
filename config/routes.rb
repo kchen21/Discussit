@@ -5,7 +5,19 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resources :subforums do
     resources :posts, except: [:index] do
-      resources :comments, except: [:index]
+      member do
+        post "upvote"
+        post "downvote"
+      end
+
+      resources :comments, except: [:index] do
+        member do
+          post "upvote"
+          post "downvote"
+        end
+      end
     end
   end
+
+  root to: redirect("/subforums")
 end

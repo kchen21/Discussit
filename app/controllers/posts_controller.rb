@@ -48,6 +48,12 @@ class PostsController < ApplicationController
     redirect_to subforum_url(@post.subforum_id)
   end
 
+  def upvote
+  end
+
+  def downvote
+  end
+
   private
 
   def require_current_user_owns_post

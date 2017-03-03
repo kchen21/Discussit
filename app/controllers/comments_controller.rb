@@ -58,6 +58,12 @@ class CommentsController < ApplicationController
     redirect_to subforum_post_url(params[:subforum_id], @comment.post_id)
   end
 
+  def upvote
+  end
+
+  def downvote
+  end
+
   private
 
   def require_current_user_owns_comment
