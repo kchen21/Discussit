@@ -86,6 +86,6 @@ class PostsController < ApplicationController
       flash[:errors] = @vote.errors.full_messages
     end
 
-    redirect_to subforum_post_url(@post.subforum_id, @post)
+    redirect_to subforum_url(@post.subforum_id)
   end
 end

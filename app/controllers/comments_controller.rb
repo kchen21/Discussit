@@ -88,6 +88,6 @@ class CommentsController < ApplicationController
       flash[:errors] = @vote.errors.full_messages
     end
 
-    redirect_to subforum_post_comment_url(@subforum, @comment.post_id, @comment)
+    redirect_to subforum_post_url(@subforum, @comment.post_id)
   end
 end
