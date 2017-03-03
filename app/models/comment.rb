@@ -36,6 +36,13 @@ class Comment < ApplicationRecord
     class_name: :Comment
   )
 
+  belongs_to(
+    :parent_comment,
+    primary_key: :id,
+    foreign_key: :parent_comment_id,
+    class_name: :Comment
+  )
+
   def create_preview
     if self.body.length > 100
       return self.body[0..99] + "..."
