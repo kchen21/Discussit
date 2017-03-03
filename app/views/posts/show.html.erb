@@ -15,7 +15,7 @@
 
 <h3>Comments</h3>
 <ul>
-  <% @post.comments.each do |comment| %>
+  <% @post.comments.where(parent_comment_id: nil).each do |comment| %>
     <li>
       <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
       <%= comment.author.username %>
