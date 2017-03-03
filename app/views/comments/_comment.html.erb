@@ -1,0 +1,15 @@
+<p>
+  <%= link_to comment.create_preview, subforum_post_comment_url(subforum, post, comment) %>
+</p>
+
+<ul>
+  <% comments_grouped_by_parent[comment.id].each do |child_comment| %>
+    <li>
+      <%= render "comments/comment",
+        subforum: subforum,
+        post: post,
+        comment: child_comment,
+        comments_grouped_by_parent: comments_grouped_by_parent %>
+    </li>
+  <% end %>
+</ul>

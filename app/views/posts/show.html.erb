@@ -15,10 +15,15 @@
 
 <h3>Comments</h3>
 <ul>
-  <% @post.comments.where(parent_comment_id: nil).each do |comment| %>
+  <% comments_grouped_by_parent = @post.comments_grouped_by_parent %>
+
+  <% comments_grouped_by_parent[nil].each do |top_level_comment| %>
     <li>
-      <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
-      <%= comment.author.username %>
+      <%= render "comments/comment",
+        subforum: @subforum,
+        post: @post,
+        comment: top_level_comment,
+        comments_grouped_by_parent: comments_grouped_by_parent %>
     </li>
   <% end %>
 </ul>
