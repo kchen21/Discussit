@@ -59,9 +59,11 @@ class CommentsController < ApplicationController
   end
 
   def upvote
+    vote(1)
   end
 
   def downvote
+    vote(-1)
   end
 
   private
@@ -75,5 +77,17 @@ class CommentsController < ApplicationController
 
   def comment_params
     params.require(:comment).permit(:body, :parent_comment_id)
+  end
+
+  def vote(value)
+    @comment = Comment.find(params[:id])
+    @subforum = @comment.subforum
+    @vote = @comment.votes.find_or_initialize_by(user: current_user)
+
+    unless @vote.update(value: value)
+      flash[:errors] = @vote.errors.full_messages
+    end
+
+    redirect_to subforum_post_comment_url(@subforum, @comment.post_id, @comment)
   end
 end
