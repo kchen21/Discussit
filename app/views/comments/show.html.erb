@@ -14,7 +14,5 @@
 <%= link_to "Edit comment", edit_subforum_post_comment_url(@subforum, @post, @comment) %>
 <%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
 
-<h3>Responses</h3>
-
-
-<%# TODO: Create a list of links to each of @comment's comments %>
+<p>Write a response</p>
+<%= render "form", comment: @child_comment %>

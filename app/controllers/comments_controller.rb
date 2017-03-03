@@ -32,6 +32,8 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @post = @comment.post
     @subforum = @comment.subforum
+
+    @child_comment = @comment.child_comments.new
   end
 
   def update
