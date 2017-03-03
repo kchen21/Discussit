@@ -6,7 +6,7 @@ module Votable
     dependent: :destroy
   end
 
-  def votes
+  def points
     self.votes.sum(:value)
   end
 end

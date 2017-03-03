@@ -16,6 +16,9 @@
     <li>
       <%= link_to post.title, subforum_post_url(post.subforum_id, post) %>
       <%= post.author.username %>
+      Points: (<%= post.points %>)
+      <%= button_to "Upvote", upvote_subforum_post_url(post.subforum_id, post) %>
+      <%= button_to "Downvote", downvote_subforum_post_url(post.subforum_id, post) %>
     </li>
   <% end %>
 </ul>
