@@ -13,6 +13,8 @@
 #
 
 class Post < ApplicationRecord
+  include Votable
+
   validates :title, :body, :subforum, :author, presence: true
   validates :title, uniqueness: true
 

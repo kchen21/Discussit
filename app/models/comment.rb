@@ -12,6 +12,8 @@
 #
 
 class Comment < ApplicationRecord
+  include Votable
+
   validates :body, :author, :post, presence:true
 
   belongs_to(
