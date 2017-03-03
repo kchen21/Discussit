@@ -2,8 +2,8 @@
   <%= link_to comment.create_preview, subforum_post_comment_url(subforum, post, comment) %>
   <%= comment.author.username %>
   Points: (<%= comment.points %>)
-  <%= button_to, "Upvote", upvote_subforum_post_comment_url(subforum, post, comment) %>
-  <%= button_to, "Downvote", downvote_subforum_post_comment_url(subforum, post, comment) %>
+  <%= button_to "Upvote", upvote_subforum_post_comment_url(subforum, post, comment) %>
+  <%= button_to "Downvote", downvote_subforum_post_comment_url(subforum, post, comment) %>
 </p>
 
 <ul>
