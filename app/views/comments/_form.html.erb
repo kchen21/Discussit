@@ -9,6 +9,8 @@
   <%= auth_token %>
   <input type="hidden" name="_method" value="<%= http_method %>">
 
+  <input type="hidden" name="comment[parent_comment_id]" value="<%= comment.parent_comment_id %>">
+
   <label for="body">Comment</label>
   <textarea id="body" name="comment[body]"><%= comment.body %></textarea>
 
