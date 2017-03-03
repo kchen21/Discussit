@@ -49,9 +49,11 @@ class PostsController < ApplicationController
   end
 
   def upvote
+    vote(1)
   end
 
   def downvote
+    vote(-1)
   end
 
   private
@@ -74,5 +76,16 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :url, :body)
+  end
+
+  def vote(value)
+    @post = Post.find(params[:id])
+    @vote = @post.votes.find_or_initialize_by(user: current_user)
+
+    unless @vote.update(value: value)
+      flash[:errors] = @vote.errors.full_messages
+    end
+
+    redirect_to subforum_post_url(@post.subforum_id, @post)
   end
 end

@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     else
       if @comment.parent_comment_id
         flash[:errors] = @comment.errors.full_messages
-        redirect_to subforum_post_comment_url(@subforum, @post, @comment.parent_comment)
+        redirect_to subforum_post_comment_url(@subforum, @comment.post_id, @comment.parent_comment_id)
       else
         flash.now[:errors] = @comment.errors.full_messages
         render :new
