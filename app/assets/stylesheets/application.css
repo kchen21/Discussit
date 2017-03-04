@@ -14,3 +14,41 @@
  *= require_tree .
  *= require_self
  */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: aquamarine;
+  height: 45px;
+}
+
+.header > h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header > nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #EFF7FF;
+  font-size: 14px;
+  border-top-left-radius: 7px;
+  padding: 4px;
+}
+
+.header .button_to {
+  display: inline-block;
+}
+
+.header a, .header .button_to > input {
+  font-size: 12px;
+  color: #000;
+}
+
+.header a:hover, .header .button_to > input:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

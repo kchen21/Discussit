@@ -9,17 +9,19 @@
   </head>
 
   <body>
-    <h1>Discussit</h1>
-    <nav>
-      <% if logged_in? %>
+    <section class="header">
+      <h1>Discussit</h1>
+      <nav>
+        <% if logged_in? %>
         <%= "Welcome, " + current_user.first_name + "!" %>
         <%= link_to "Update account", edit_user_url(current_user) %>
         <%= button_to "Log out", session_url, method: :delete %>
-      <% else %>
+        <% else %>
         <%= link_to "Log in", new_session_url %>
         <%= link_to "Sign up", new_user_url %>
-      <% end %>
-    </nav>
+        <% end %>
+      </nav>
+    </section>
 
     <%= yield %>
   </body>
