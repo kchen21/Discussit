@@ -1,15 +1,19 @@
-<h2>Log in</h2>
+<section class="log-in">
+  <h2>Log in</h2>
 
-<%= render "shared/errors" %>
+  <form class="log-in-form" action="<%= session_url %>" method="post">
+    <%= auth_token %>
 
-<form class="log-in-form" action="<%= session_url %>" method="post">
-  <%= auth_token %>
+    <!-- <label for="username">Username</label> -->
+    <input id="username" type="text" name="user[username]" value="" placeholder="username">
 
-  <label for="username">Username</label>
-  <input id="username" type="text" name="user[username]" value="">
+    <!-- <label for="password">Password</label> -->
+    <input id="password" type="password" name="user[password]" value="" placeholder="password">
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="user[password]" value="">
+    <input id ="submit" type="submit" value="Log in">
+  </form>
 
-  <input type="submit" value="Log in">
-</form>
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
+</section>

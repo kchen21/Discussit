@@ -1,0 +1,41 @@
+/*new*/
+
+.log-in {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  /*height: 180px;*/
+  margin: 45px auto;
+}
+
+.log-in > h2 {
+  display: block;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+
+.log-in-form > input {
+  display: block;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.log-in-form > #submit {
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 5px 5px #888888;
+}
+
+.log-in-form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.log-in > .errors {
+  text-align: center;
+  color: coral;
+  margin: 16px;
+}
