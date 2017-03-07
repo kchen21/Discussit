@@ -1,24 +1,23 @@
-<h2>Sign up</h2>
+<section class="sign-up">
+  <h2>Sign up</h2>
 
-<%= render "shared/errors" %>
+  <form class="sign-up-form" action="<%= users_url %>" method="post">
+    <%= auth_token %>
 
-<form class="sign-up-form" action="<%= users_url %>" method="post">
-  <%= auth_token %>
+    <input id="first-name" type="text" name="user[first_name]" value="" placeholder="first name">
 
-  <label for="first-name">First name</label>
-  <input id="first-name" type="text" name="user[first_name]" value="">
+    <input id="last-name" type="text" name="user[last_name]" value="" placeholder="last name">
 
-  <label for="last-name">Last name</label>
-  <input id="last-name" type="text" name="user[last_name]" value="">
+    <input id="email" type="text" name="user[email]" value="" placeholder="email">
 
-  <label for="email">Email</label>
-  <input id="email" type="text" name="user[email]" value="">
+    <input id="username" type="text" name="user[username]" value="" placeholder="username">
 
-  <label for="username">Username</label>
-  <input id="username" type="text" name="user[username]" value="">
+    <input id="password" type="password" name="user[password]" value="" placeholder="password">
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="user[password]" value="">
+    <input id="submit" type="submit" value="Sign up">
+  </form>
 
-  <input type="submit" value="Sign up">
-</form>
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
+</section>
