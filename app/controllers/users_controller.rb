@@ -29,7 +29,7 @@ class UsersController < ApplicationController
       redirect_to subforums_url
     else
       flash.now[:errors] = @user.errors.full_messages
-      render :show
+      render :edit
     end
   end
 
