@@ -1,12 +1,14 @@
-<h2>Subforums</h2>
+<section class="subforums-index">
+  <h2>Subforums</h2>
 
-<ul>
-  <% @subforums.each do |subforum| %>
-    <li>
-      <%= link_to subforum.title, subforum_url(subforum) %>
-      <%= subforum.moderator.username %>
-    </li>
-  <% end %>
-</ul>
+  <ul>
+    <% @subforums.each do |subforum| %>
+      <li>
+        <%= link_to subforum.title, subforum_url(subforum) %>
+        <%= subforum.moderator.username %>
+      </li>
+    <% end %>
+  </ul>
 
-<%= link_to "Create a new subforum", new_subforum_url %>
+  <%= link_to "Create a new subforum", new_subforum_url %>
+</section>

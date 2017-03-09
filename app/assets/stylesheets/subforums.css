@@ -1,0 +1,37 @@
+/*index*/
+
+.subforums-index {
+  display: block;
+  width: 80vw;
+  min-width: 400px;
+  text-align: center;
+  border: 1px solid #000;
+  margin: 45px auto;
+}
+
+.subforums-index > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.subforums-index > ul {
+  display: block;
+  margin: 16px auto;
+}
+
+.subforums-index a {
+  color: #000;
+}
+
+.subforums-index a:hover {
+  text-decoration: underline;
+}
+
+.subforums-index li {
+  font-style: italic;
+}
+
+.subforums-index > a {
+  display: block;
+  margin: 16px 0;
+}
