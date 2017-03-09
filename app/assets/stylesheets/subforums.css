@@ -6,6 +6,7 @@
   min-width: 400px;
   text-align: center;
   border: 1px solid #000;
+  border-radius: 4px;
   margin: 45px auto;
 }
 
