@@ -24,7 +24,7 @@
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
-  box-shadow: 0 5px 5px #888888;
+  box-shadow: 0 2px 5px #888888;
 }
 
 .sign-up-form > #submit:hover {
@@ -80,7 +80,7 @@
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
-  box-shadow: 0 5px 5px #888888;
+  box-shadow: 0 2px 5px #888888;
   font-size: 16px;
   margin: 16px auto;
 }

@@ -1,26 +1,34 @@
 <% description = @subforum.description %>
 
-<h2><%= @subforum.title %></h2>
+<section class="subforums-show">
+  <h2><%= @subforum.title %></h2>
 
-<h3>Description</h3>
-<p><%= description == "" ? "None" : description %></p>
+  <section class="description">
+    <h3>Description</h3>
+    <p><%= description == "" ? "None" : description %></p>
+  </section>
 
-<%= render "shared/errors" %>
+  <%= render "shared/errors" %>
 
-<%= link_to "Edit subforum", edit_subforum_url(@subforum) %>
-<%= link_to "See all subforums", subforums_url %>
+  <%= link_to "Edit subforum", edit_subforum_url(@subforum) %>
+  <%= link_to "See all subforums", subforums_url %>
 
-<h3>Posts</h3>
-<ul>
-  <% @subforum.posts.each do |post| %>
-    <li>
-      <%= link_to post.title, subforum_post_url(post.subforum_id, post) %>
-      <%= post.author.username %>
-      Points: (<%= post.points %>)
-      <%= button_to "Upvote", upvote_subforum_post_url(post.subforum_id, post) %>
-      <%= button_to "Downvote", downvote_subforum_post_url(post.subforum_id, post) %>
-    </li>
-  <% end %>
-</ul>
+  <section class="posts">
+    <h3>Posts</h3>
+    <ul>
+      <% @subforum.posts.each do |post| %>
+        <li>
+          <%= link_to post.title, subforum_post_url(post.subforum_id, post) %>
+          <%= post.author.username %>
+          <section class="post-score">
+            Points: (<%= post.points %>)
+            <%= button_to "Upvote", upvote_subforum_post_url(post.subforum_id, post) %>
+            <%= button_to "Downvote", downvote_subforum_post_url(post.subforum_id, post) %>
+          </section>
+        </li>
+      <% end %>
+    </ul>
 
-<%= link_to "Create a new post", new_subforum_post_url(subforum_id: @subforum.id) %>
+    <%= link_to "Create a new post", new_subforum_post_url(subforum_id: @subforum.id) %>
+  </section>
+</section>

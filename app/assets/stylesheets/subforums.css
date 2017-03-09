@@ -30,9 +30,89 @@
 
 .subforums-index li {
   font-style: italic;
+  color: #7d7c7b;
 }
 
 .subforums-index > a {
   display: block;
   margin: 16px 0;
+}
+
+/*show*/
+
+.subforums-show {
+  display: block;
+  width: 80vw;
+  min-width: 400px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 45px auto;
+}
+
+.subforums-show > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.subforums-show > .description {
+  display: block;
+  margin: 16px auto;
+}
+
+.subforums-show > a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #000;
+}
+
+.subforums-show > .posts {
+  display: block;
+  width: 80%;
+  min-width: 320px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.subforums-show > .posts > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.subforums-show li {
+  font-style: italic;
+  color: #7d7c7b;
+  margin: 12px auto;
+}
+
+.subforums-show li > a {
+  color: #000;
+}
+
+.post-score {
+  font-size: 14px;
+}
+
+.post-score > .button_to {
+  display: inline-block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: 0 1px 1px #888888;
+}
+
+.post-score > .button_to > input:hover {
+  cursor: pointer;
+}
+
+.subforums-show > .posts > a {
+  display: block;
+  color: #000;
+  margin: 16px auto;
+}
+
+.subforums-show a:hover {
+  text-decoration: underline;
 }
