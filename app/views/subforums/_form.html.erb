@@ -7,8 +7,10 @@
   <%= auth_token %>
   <input type="hidden" name="_method" value="<%= http_method %>">
 
-  <label for="title">Title</label>
-  <input id="title" type="text" name="subforum[title]" value="<%= subforum.title %>" placeholder="title">
+  <section class="input-field">
+    <label for="title">Title</label>
+    <input id="title" type="text" name="subforum[title]" value="<%= subforum.title %>" placeholder="title">
+  </section>
 
   <label for="form-description">Description</label>
   <textarea id="description" name="subforum[description]" placeholder="description"><%= subforum.description %></textarea>

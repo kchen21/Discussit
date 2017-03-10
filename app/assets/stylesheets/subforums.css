@@ -22,6 +22,7 @@
 
 .subforums-index a {
   color: #000;
+  font-size: 16px;
 }
 
 .subforums-index a:hover {
@@ -31,6 +32,7 @@
 .subforums-index li {
   font-style: italic;
   color: #7d7c7b;
+  font-size: 12px;
 }
 
 .subforums-index > a {
@@ -85,14 +87,16 @@
   font-style: italic;
   color: #7d7c7b;
   margin: 12px auto;
+  font-size: 12px;
 }
 
 .subforums-show li > a {
   color: #000;
+  font-size: 16px;
 }
 
 .post-score {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-score > .button_to {
@@ -105,6 +109,7 @@
 
 .post-score > .button_to > input:hover {
   cursor: pointer;
+  opacity: .75;
 }
 
 .subforums-show > .posts > a {
@@ -133,11 +138,11 @@
   text-align: center;
 }
 
-.subforums-new > form > label {
+.subforums-new > form label {
   display: none;
 }
 
-.subforums-new > form > input {
+.subforums-new .input-field > input {
   display: block;
   margin: 16px auto;
   font-size: 16px;
@@ -150,10 +155,12 @@
 }
 
 .subforums-new > form > #submit {
+  display: block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
+  margin: 16px auto;
 }
 
 .subforums-new > form > #submit:hover {
@@ -176,4 +183,95 @@
 
 .subforums-new > a:hover {
   text-decoration: underline;
+}
+
+/*edit*/
+
+.subforums-edit {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  margin: 45px auto;
+  position: relative;
+}
+
+.subforums-edit > h2 {
+  display: block;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.subforums-edit > .button_to > input {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: 0 1px 1px #888888;
+  background-color: #fff;
+}
+
+.subforums-edit > .button_to > input:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+
+.subforums-edit .input-field {
+  display: block;
+  width: 307px;
+  height: 18px;
+  margin: 16px auto;
+}
+
+.subforums-edit label {
+  display: inline-block;
+  width: 36px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subforums-edit .input-field > input {
+  display: inline-block;
+  width: 264px;
+  font-size: 16px;
+  border: 1px solid #e8e6e4;
+}
+
+.subforums-edit > form > label {
+  display: block;
+  width: 307px;
+  margin: 16px auto 0 auto;
+}
+
+.subforums-edit #description {
+  display: block;
+  width: 299px;
+  margin: 0 auto 16px auto;
+  height: 36px;
+  border: 1px solid #e8e6e4;
+  font-size: 16px;
+  padding: 0 2px;
+}
+
+.subforums-edit > form > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  margin: 16px auto;
+}
+
+.subforums-edit > form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.subforums-edit > .errors {
+  text-align: center;
+  color: coral;
+  margin: 16px;
 }

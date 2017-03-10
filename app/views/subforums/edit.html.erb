@@ -1,3 +1,5 @@
-<h2>Edit Subforum</h2>
-<%= button_to "Delete", subforum_url(@subforum), method: :delete %>
-<%= render "form", subforum: @subforum %>
+<section class="subforums-edit">
+  <h2>Edit Subforum</h2>
+  <%= button_to "Delete", subforum_url(@subforum), method: :delete %>
+  <%= render "form", subforum: @subforum %>
+</section>
