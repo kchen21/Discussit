@@ -14,7 +14,8 @@
 class Comment < ApplicationRecord
   include Votable
 
-  validates :body, :author, :post, presence:true
+  validates :body, :author, :post, presence: true
+  validates :parent_comment, presence: true, allow_nil: true
 
   belongs_to(
     :author,
@@ -43,7 +44,8 @@ class Comment < ApplicationRecord
     :parent_comment,
     primary_key: :id,
     foreign_key: :parent_comment_id,
-    class_name: :Comment
+    class_name: :Comment,
+    optional: true
   )
 
   def create_preview
