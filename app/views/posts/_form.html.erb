@@ -3,26 +3,26 @@
 <% action_url = post.persisted? ? subforum_post_url(post) : subforum_posts_url %>
 <% http_method = post.persisted? ? "PATCH" : "POST" %>
 
-<%= render "shared/errors" %>
-
 <form action="<%= action_url %>" method="POST">
   <%= auth_token %>
   <input type="hidden" name="_method" value="<%= http_method %>">
 
-  <label for="title">Title</label>
-  <input id="title" type="text" name="post[title]" value="<%= post.title %>">
+  <section class="input-field">
+    <label for="title">Title</label>
+    <input id="title" type="text" name="post[title]" value="<%= post.title %>" placeholder="title">
+  </section>
 
-  <br>
-
-  <label for="url">URL</label>
-  <input id="url" type="text" name="post[url]" value="<%= post.url %>">
-
-  <br>
+  <section class="input-field">
+    <label for="url">URL</label>
+    <input id="url" type="text" name="post[url]" value="<%= post.url %>" placeholder="url (optional)">
+  </section>
 
   <label for="body">Body</label>
-  <textarea id="body" name="post[body]"><%= post.body %></textarea>
-
-  <br>
+  <textarea id="body" name="post[body]" placeholder="body"><%= post.body %></textarea>
 
   <input type="submit" value="Submit">
 </form>
+
+<section class= "errors">
+  <%= render "shared/errors" %>
+</section>
