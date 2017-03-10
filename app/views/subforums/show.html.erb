@@ -8,10 +8,12 @@
     <p><%= description == "" ? "None" : description %></p>
   </section>
 
-  <%= render "shared/errors" %>
-
   <%= link_to "Edit subforum", edit_subforum_url(@subforum) %>
   <%= link_to "See all subforums", subforums_url %>
+  
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
 
   <section class="posts">
     <h3>Posts</h3>

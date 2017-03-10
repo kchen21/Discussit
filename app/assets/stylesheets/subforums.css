@@ -62,6 +62,12 @@
   margin: 16px auto;
 }
 
+.subforums-show > .errors li {
+  font-style: italic;
+  color: coral;
+  margin: 16px auto;
+}
+
 .subforums-show > a {
   display: inline-block;
   padding: 0 16px;
@@ -83,7 +89,7 @@
   background-color: aquamarine;
 }
 
-.subforums-show li {
+.subforums-show > .posts li {
   font-style: italic;
   color: #7d7c7b;
   margin: 12px auto;
@@ -168,10 +174,11 @@
   background-color: aquamarine;
 }
 
-.subforums-new > .errors {
+.subforums-new > .errors li {
   text-align: center;
   color: coral;
   margin: 16px;
+  font-style: italic;
 }
 
 .subforums-new > a {
@@ -270,8 +277,9 @@
   background-color: aquamarine;
 }
 
-.subforums-edit > .errors {
+.subforums-edit > .errors li {
   text-align: center;
   color: coral;
   margin: 16px;
+  font-style: italic;
 }
