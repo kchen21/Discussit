@@ -101,3 +101,10 @@
 .posts-show a:hover {
   text-decoration: underline;
 }
+
+.posts-show > .errors li {
+  text-align: center;
+  color: coral;
+  margin: 16px;
+  font-style: italic;
+}
