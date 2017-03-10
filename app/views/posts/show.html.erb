@@ -1,31 +1,39 @@
 <% url = @post.url %>
 
-<h2><%= @post.title %></h2>
-<p>Subforum: <%= @subforum.title %></p>
+<section class="posts-show">
+  <h2><%= @post.title %></h2>
 
-<p>URL: <%= url == "" ? "None" : url %></p>
+  <section class="info">
+    <p>Subforum: <%= @subforum.title %></p>
+    <p>URL: <%= url == "" ? "None" : url %></p>
+  </section>
 
-<p><%= @post.body %><p>
+  <p><%= @post.body %></p>
 
-<%= render "shared/errors" %>
+  <%= link_to "Edit post", edit_subforum_post_url(@post.subforum_id, @post) %>
+  <%= link_to "Go back to subforum", subforum_url(@post.subforum_id) %>
+  <%= button_to "Delete", subforum_post_url(@post.subforum_id, @post), method: :delete %>
 
-<%= link_to "Edit post", edit_subforum_post_url(@post.subforum_id, @post) %>
-<%= button_to "Delete", subforum_post_url(@post.subforum_id, @post), method: :delete %>
-<%= link_to "Go back to subforum", subforum_url(@post.subforum_id) %>
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
 
-<h3>Comments</h3>
-<ul>
-  <% comments_grouped_by_parent = @post.comments_grouped_by_parent %>
+  <section class="comments">
+    <h3>Comments</h3>
+    <ul>
+      <% comments_grouped_by_parent = @post.comments_grouped_by_parent %>
 
-  <% comments_grouped_by_parent[nil].each do |top_level_comment| %>
-    <li>
-      <%= render "comments/comment",
-        subforum: @subforum,
-        post: @post,
-        comment: top_level_comment,
-        comments_grouped_by_parent: comments_grouped_by_parent %>
-    </li>
-  <% end %>
-</ul>
+      <% comments_grouped_by_parent[nil].each do |top_level_comment| %>
+        <li>
+          <%= render "comments/comment",
+            subforum: @subforum,
+            post: @post,
+            comment: top_level_comment,
+            comments_grouped_by_parent: comments_grouped_by_parent %>
+        </li>
+      <% end %>
+    </ul>
 
-<%= link_to "Write a new comment", new_subforum_post_comment_url(subforum_id: @subforum.id, post_id: @post.id) %>
+    <%= link_to "Write a new comment", new_subforum_post_comment_url(subforum_id: @subforum.id, post_id: @post.id) %>
+  </section>
+</section>

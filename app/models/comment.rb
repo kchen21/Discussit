@@ -35,7 +35,8 @@ class Comment < ApplicationRecord
     :child_comments,
     primary_key: :id,
     foreign_key: :parent_comment_id,
-    class_name: :Comment
+    class_name: :Comment,
+    dependent: :destroy
   )
 
   belongs_to(

@@ -27,7 +27,8 @@ class Post < ApplicationRecord
     class_name: :User
   )
 
-  has_many :comments
+  has_many :comments,
+    dependent: :destroy
 
   def comments_grouped_by_parent
     comments_grouped_by_parent = Hash.new { |hash, key| hash[key]= [] }

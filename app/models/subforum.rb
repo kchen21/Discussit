@@ -21,11 +21,13 @@ class Subforum < ApplicationRecord
     class_name: :User
   )
 
-  has_many :posts
+  has_many :posts,
+    dependent: :destroy
 
   has_many(
     :comments,
     through: :posts,
-    source: :comments
+    source: :comments,
+    dependent: :destroy
   )
 end

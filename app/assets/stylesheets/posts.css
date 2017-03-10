@@ -1,1 +1,53 @@
 /*show*/
+
+.posts-show {
+  display: block;
+  width: 80vw;
+  min-width: 400px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 45px auto;
+  position: relative;
+}
+
+.posts-show > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.posts-show > .info {
+  font-size: 12px;
+  margin: 12px auto;
+}
+
+.posts-show > p {
+  margin: 16px auto;
+}
+
+.posts-show > .button_to > input {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: 0 1px 1px #888888;
+  background-color: #fff;
+}
+
+.posts-show > .button_to > input:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+
+.posts-show > a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #000;
+}
+
+.posts-show a:hover {
+  text-decoration: underline;
+}
