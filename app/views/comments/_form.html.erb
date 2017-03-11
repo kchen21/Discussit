@@ -3,8 +3,6 @@
 <% action_url = comment.persisted? ? subforum_post_comment_url(comment) : subforum_post_comments_url %>
 <% http_method = comment.persisted? ? "PATCH" : "POST" %>
 
-<% render "shared/errors" %>
-
 <form action="<%= action_url %>" method="POST">
   <%= auth_token %>
   <input type="hidden" name="_method" value="<%= http_method %>">
@@ -14,7 +12,9 @@
   <label for="body">Comment</label>
   <textarea id="body" name="comment[body]"><%= comment.body %></textarea>
 
-  <br>
-
   <input type="submit" value="Submit">
 </form>
+
+<section class="errors">
+  <% render "shared/errors" %>
+</section>

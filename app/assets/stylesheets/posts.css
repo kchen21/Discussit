@@ -52,7 +52,7 @@
   display: block;
   width: 80%;
   min-width: 320px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #000;
   border-radius: 4px;
   margin: 16px auto;
@@ -61,6 +61,11 @@
 .posts-show > .comments > h3 {
   display: block;
   background-color: aquamarine;
+  text-align: center;
+}
+
+.posts-show > .comments > ul {
+  padding: 0 8px;
 }
 
 .posts-show > .comments li {
@@ -75,11 +80,11 @@
   font-size: 16px;
 }
 
-.comment-score {
+.posts-show > .comments .comment-score {
   font-size: 12px;
 }
 
-.comment-score > .button_to {
+.posts-show > .comments .comment-score > .button_to {
   display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
@@ -87,15 +92,28 @@
   box-shadow: 0 1px 1px #888888;
 }
 
-.comment-score > .button_to > input:hover {
+.posts-show > .comments .comment-score > .button_to > input:hover {
   cursor: pointer;
   opacity: .75;
+}
+
+.posts-show > .comments .responses {
+  display: block;
+  width: 96%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.posts-show > .comments .responses > ul {
+  padding: 0 8px;
 }
 
 .posts-show > .comments > a {
   display: block;
   color: #000;
   margin: 16px auto;
+  text-align: center;
 }
 
 .posts-show a:hover {
