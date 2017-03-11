@@ -35,6 +35,8 @@ class CommentsController < ApplicationController
 
   def show
     @comment = Comment.find(params[:id])
+    @child_comments = @comment.child_comments
+
     @post = @comment.post
     @subforum = @comment.subforum
 
