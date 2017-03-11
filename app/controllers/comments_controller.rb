@@ -43,6 +43,8 @@ class CommentsController < ApplicationController
 
   def update
     @comment = Comment.find(params[:id])
+    @post = @comment.post
+    @subforum = @comment.subforum
 
     if @comment.update(comment_params)
       redirect_to subforum_post_comment_url(params[:subforum_id], @comment.post_id, @comment)

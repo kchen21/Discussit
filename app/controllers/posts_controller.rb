@@ -33,6 +33,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
+    @subforum = @post.subforum
 
     if @post.update(post_params)
       redirect_to subforum_post_url(@post.subforum_id, @post)
