@@ -102,9 +102,86 @@
   text-decoration: underline;
 }
 
+.posts-show > .errors > ul {
+  margin: 16px;
+}
+
 .posts-show > .errors li {
   text-align: center;
   color: coral;
-  margin: 16px;
   font-style: italic;
+}
+
+/*new*/
+
+.posts-new {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  margin: 45px auto;
+}
+
+.posts-new > h2 {
+  display: block;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.posts-new > p {
+  font-size: 12px;
+  margin: 12px auto;
+  text-align: center;
+}
+
+.posts-new > form label {
+  display: none;
+}
+
+.posts-new .input-field > input {
+  display: block;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.posts-new > form > textarea {
+  display: block;
+  margin: 16px auto;
+  font-size: 16px;
+  width: 166px;
+}
+
+.posts-new > form > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  margin: 16px auto;
+}
+
+.posts-new > form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.posts-new > .errors > ul {
+  margin: 16px;
+}
+
+.posts-new > .errors li {
+  text-align: center;
+  color: coral;
+  font-style: italic;
+}
+
+.posts-new > a {
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  color: #000;
+}
+
+.posts-new > a:hover {
+  text-decoration: underline;
 }

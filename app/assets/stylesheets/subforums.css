@@ -62,10 +62,14 @@
   margin: 16px auto;
 }
 
+.subforums-show > .errors > ul {
+  margin: 16px;
+}
+
 .subforums-show > .errors li {
-  font-style: italic;
+  text-align: center;
   color: coral;
-  margin: 16px auto;
+  font-style: italic;
 }
 
 .subforums-show > a {
@@ -174,10 +178,13 @@
   background-color: aquamarine;
 }
 
+.subforums-new > .errors > ul {
+  margin: 16px;
+}
+
 .subforums-new > .errors li {
   text-align: center;
   color: coral;
-  margin: 16px;
   font-style: italic;
 }
 
@@ -277,9 +284,12 @@
   background-color: aquamarine;
 }
 
+.subforums-edit > .errors > ul {
+  margin: 16px;
+}
+
 .subforums-edit > .errors li {
   text-align: center;
   color: coral;
-  margin: 16px;
   font-style: italic;
 }

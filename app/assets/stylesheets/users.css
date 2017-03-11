@@ -32,10 +32,13 @@
   background-color: aquamarine;
 }
 
+.sign-up > .errors > ul {
+  margin: 16px;
+}
+
 .sign-up > .errors li {
   text-align: center;
   color: coral;
-  margin: 16px;
   font-style: italic;
 }
 
@@ -91,10 +94,13 @@
   background-color: aquamarine;
 }
 
+.account-update > .errors > ul {
+  margin: 16px;
+}
+
 .account-update > .errors li {
   text-align: center;
   color: coral;
-  margin: 16px auto;
   font-style: italic;
 }
 

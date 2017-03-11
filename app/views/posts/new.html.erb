@@ -1,5 +1,7 @@
-<h2>New Post</h2>
-<p>Subforum: <%= @subforum.title %></p>
+<section class="posts-new">
+  <h2>New Post</h2>
+  <p>Subforum: <%= @subforum.title %></p>
 
-<%= render "form", post: @post %>
-<%= link_to "Go back to subforum", subforum_url(@subforum) %>
+  <%= render "form", post: @post %>
+  <%= link_to "Go back to subforum", subforum_url(@subforum) %>
+</section>
