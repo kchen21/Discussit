@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     @subforum = @comment.subforum
 
     if @comment.save
-      redirect_to subforum_post_comment_url(@subforum, @comment.post_id, @comment)
+      redirect_to subforum_post_url(@subforum, @comment.post_id)
     else
       if @comment.parent_comment_id
         flash[:errors] = @comment.errors.full_messages
