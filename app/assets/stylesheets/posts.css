@@ -186,3 +186,88 @@
 .posts-new > a:hover {
   text-decoration: underline;
 }
+
+/*edit*/
+
+.posts-edit {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  margin: 45px auto;
+  position: relative;
+}
+
+.posts-edit > h2 {
+  display: block;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.posts-edit > p {
+  font-size: 12px;
+  margin: 12px auto;
+  text-align: center;
+}
+
+.posts-edit .input-field {
+  display: block;
+  width: 307px;
+  height: 18px;
+  margin: 16px auto;
+}
+
+.posts-edit label {
+  display: inline-block;
+  width: 36px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.posts-edit .input-field > input {
+  display: inline-block;
+  width: 264px;
+  font-size: 16px;
+  border: 1px solid #e8e6e4;
+}
+
+.posts-edit > form > label {
+  display: block;
+  width: 307px;
+  margin: 16px auto 0 auto;
+}
+
+.posts-edit #body {
+  display: block;
+  width: 299px;
+  margin: 0 auto 16px auto;
+  height: 36px;
+  border: 1px solid #e8e6e4;
+  font-size: 16px;
+  padding: 0 2px;
+}
+
+.posts-edit > form > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.posts-edit > form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.posts-edit > .errors > ul {
+  margin: 16px;
+}
+
+.posts-edit > .errors li {
+  text-align: center;
+  color: coral;
+  font-style: italic;
+}
