@@ -1,35 +1,43 @@
-<h2><%= @comment.author.username %>'s Comment<h2>
-<p>Subforum: <%= @subforum.title %></p>
+<section class="comments-show">
+  <h2><%= @comment.author.username %>'s Comment</h2>
+  <p class="subforum">Subforum: <%= @subforum.title %></p>
 
-<h3>Post<h3>
-<p><%= @post.title %></p>
-<p><%= @post.url %></p>
-<p><%= @post.body %></p>
+  <section class="post">
+    <h3>Original Post</h3>
+    <p class="title"><%= @post.title %></p>
+    <p class="url">URL: <%= @post.url %></p>
+    <p><%= @post.body %></p>
+  </section>
 
-<h3>Comment</h3>
-<p><%= @comment.body %></p>
+  <h3>Comment</h3>
+  <p><%= @comment.body %></p>
 
-<%= render "shared/errors" %>
+  <%= link_to "Edit comment", edit_subforum_post_comment_url(@subforum, @post, @comment) %>
+  <%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
 
-<%= link_to "Edit comment", edit_subforum_post_comment_url(@subforum, @post, @comment) %>
-<%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
+  <section class="responses">
+    <h3>Responses</h3>
+    <ul>
+      <% @child_comments.each do |comment| %>
+        <% if comment.id %> <!-- excludes the new comment -->
+          <li>
+            <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
+            <%= comment.author.username %>
+            <section class="comment-score">
+              Points: (<%= comment.points %>)
+            </section>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
 
-<h3>Responses</h3>
-<ul>
-  <% @child_comments.each do |comment| %>
-    <% if comment.id %> <!-- excludes the new comment -->
-      <li>
-        <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
-        <%= comment.author.username %>
-        <section class="comment-score">
-          Points: (<%= comment.points %>)
-          <%= button_to "Upvote", upvote_subforum_post_comment_url(@subforum, @post, comment) %>
-          <%= button_to "Downvote", downvote_subforum_post_comment_url(@subforum, @post, comment) %>
-        </section>
-      </li>
-    <% end %>
-  <% end %>
-</ul>
+    <section class="new-response">
+      <h3>Write a Response</h3>
+      <%= render "form", comment: @child_comment %>
+    </section>
+  </section>
 
-<p>Write a response</p>
-<%= render "form", comment: @child_comment %>
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
+<section>

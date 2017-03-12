@@ -1,0 +1,145 @@
+/*show*/
+
+.comments-show {
+  display: block;
+  width: 80vw;
+  min-width: 400px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 45px auto;
+  position: relative;
+}
+
+.comments-show > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-show > .subforum {
+  font-size: 12px;
+  margin: 12px auto;
+}
+
+.comments-show > .post {
+  display: block;
+  width: 60%;
+  min-width: 400px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.comments-show > .post > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-show > .post > p {
+  margin: 12px auto;
+}
+
+.comments-show > .post > .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comments-show > .post > .url {
+  font-size: 12px;
+}
+
+.comments-show > p {
+  margin: 16px auto;
+}
+
+.comments-show > a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #000;
+}
+
+.comments-show > a:hover {
+  text-decoration: underline;
+}
+
+.comments-show > .responses {
+  display: block;
+  width: 80%;
+  min-width: 400px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.comments-show > .responses > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-show > .responses li {
+  font-style: italic;
+  color: #7d7c7b;
+  margin: 12px auto;
+  font-size: 12px;
+}
+
+.comments-show > .responses li > a {
+  color: #000;
+  font-size: 16px;
+}
+
+.comments-show > .responses li > a:hover {
+  text-decoration: underline;
+}
+
+.comments-show > .responses .comment-score {
+  color: #7d7c7b;
+  font-size: 12px;
+}
+
+.comments-show .new-response {
+  display: block;
+  margin: 16px auto;
+}
+
+.comments-show .new-response > h3 {
+  font-weight: bold;
+}
+
+.comments-show .new-response label {
+  display: none;
+}
+
+.comments-show .new-response textarea {
+  display: block;
+  width: 300px;
+  height: 72px;
+  margin: 0 auto;
+  border: 1px solid #e8e6e4;
+  font-size: 16px;
+}
+
+.comments-show .new-response #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.comments-show .new-response #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.comments-show > .errors > ul {
+  margin: 16px;
+}
+
+.comments-show > .errors li {
+  text-align: center;
+  color: coral;
+  font-style: italic;
+}

@@ -10,9 +10,9 @@
 
   <p><%= @post.body %></p>
 
+  <%= button_to "Delete", subforum_post_url(@post.subforum_id, @post), method: :delete %>
   <%= link_to "Edit post", edit_subforum_post_url(@post.subforum_id, @post) %>
   <%= link_to "Go back to subforum", subforum_url(@post.subforum_id) %>
-  <%= button_to "Delete", subforum_post_url(@post.subforum_id, @post), method: :delete %>
 
   <section class="errors">
     <%= render "shared/errors" %>
