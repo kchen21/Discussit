@@ -143,3 +143,100 @@
   color: coral;
   font-style: italic;
 }
+
+/*new*/
+
+.comments-new {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  margin: 45px auto;
+  text-align: center;
+}
+
+.comments-new > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-new > p {
+  font-size: 12px;
+  margin: 12px auto;
+}
+
+.comments-new > .post {
+  display: block;
+  width: 80%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.comments-new > .post > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-new > .post > p {
+  margin: 12px auto;
+}
+
+.comments-new > .post > .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comments-new > .post > .url {
+  font-size: 12px;
+}
+
+.comments-new > form label {
+  display: none;
+}
+
+.comments-new > form > textarea {
+  display: block;
+  margin: 16px auto;
+  font-size: 16px;
+  width: 60%;
+  border: 1px solid #e8e6e4;
+  padding: 0 2px;
+  height: 72px;
+}
+
+.comments-new > form > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.comments-new > form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.comments-new > .errors > ul {
+  margin: 16px;
+}
+
+.comments-new > .errors li {
+  text-align: center;
+  color: coral;
+  font-style: italic;
+}
+
+.comments-new > a {
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  color: #000;
+}
+
+.comments-new > a:hover {
+  text-decoration: underline;
+}
