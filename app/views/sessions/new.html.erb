@@ -4,11 +4,15 @@
   <form class="log-in-form" action="<%= session_url %>" method="post">
     <%= auth_token %>
 
-    <!-- <label for="username">Username</label> -->
-    <input id="username" type="text" name="user[username]" value="" placeholder="username">
+    <section class="input-field">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="user[username]" value="" placeholder="">
+    </section>
 
-    <!-- <label for="password">Password</label> -->
-    <input id="password" type="password" name="user[password]" value="" placeholder="password">
+    <section class="input-field">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="user[password]" value="">
+    </section>
 
     <input id ="submit" type="submit" value="Log in">
   </form>
