@@ -21,7 +21,7 @@
 }
 
 .subforums-index a {
-  color: #000;
+  color: cornflowerblue;
   font-size: 16px;
 }
 
@@ -75,7 +75,7 @@
 .subforums-show > a {
   display: inline-block;
   padding: 0 16px;
-  color: #000;
+  color: cornflowerblue;
 }
 
 .subforums-show > .posts {
@@ -101,7 +101,7 @@
 }
 
 .subforums-show li > a {
-  color: #000;
+  color: cornflowerblue;
   font-size: 16px;
 }
 
@@ -124,7 +124,7 @@
 
 .subforums-show > .posts > a {
   display: block;
-  color: #000;
+  color: cornflowerblue;
   margin: 16px auto;
 }
 
@@ -215,7 +215,7 @@
   display: block;
   margin: 16px auto;
   text-align: center;
-  color: #000;
+  color: cornflowerblue;
 }
 
 .subforums-new > a:hover {
