@@ -9,11 +9,11 @@
 
   <section class="input-field">
     <label for="title">Title</label>
-    <input id="title" type="text" name="subforum[title]" value="<%= subforum.title %>" placeholder="title">
+    <input id="title" type="text" name="subforum[title]" value="<%= subforum.title %>">
   </section>
 
-  <label for="form-description">Description</label>
-  <textarea id="description" name="subforum[description]" placeholder="description (optional)"><%= subforum.description %></textarea>
+  <label for="form-description">Description (Optional)</label>
+  <textarea id="description" name="subforum[description]"><%= subforum.description %></textarea>
 
   <input id="submit" type="submit" value="Submit">
 </form>

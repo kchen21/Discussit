@@ -148,20 +148,41 @@
   text-align: center;
 }
 
-.subforums-new > form label {
-  display: none;
+.subforums-new .input-field {
+  display: block;
+  width: 307px;
+  height: 18px;
+  margin: 16px auto;
+}
+
+.subforums-new label {
+  display: inline-block;
+  width: 36px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .subforums-new .input-field > input {
-  display: block;
-  margin: 16px auto;
+  display: inline-block;
+  width: 264px;
   font-size: 16px;
+  border: 1px solid #e8e6e4;
 }
 
-.subforums-new > form > textarea {
+.subforums-new > form > label {
   display: block;
-  margin: 16px auto;
+  width: 307px;
+  margin: 16px auto 0 auto;
+}
+
+.subforums-new #description {
+  display: block;
+  width: 299px;
+  margin: 0 auto 16px auto;
+  height: 72px;
+  border: 1px solid #e8e6e4;
   font-size: 16px;
+  padding: 0 2px;
 }
 
 .subforums-new > form > #submit {
@@ -265,7 +286,7 @@
   display: block;
   width: 299px;
   margin: 0 auto 16px auto;
-  height: 36px;
+  height: 72px;
   border: 1px solid #e8e6e4;
   font-size: 16px;
   padding: 0 2px;
