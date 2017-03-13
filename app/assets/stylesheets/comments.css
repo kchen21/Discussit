@@ -215,9 +215,9 @@
   display: block;
   margin: 16px auto;
   font-size: 16px;
-  width: 60%;
+  width: 64%;
   border: 1px solid #e8e6e4;
-  padding: 0 2px;
+  padding: 2px;
   height: 72px;
 }
 
@@ -332,9 +332,9 @@
   display: block;
   margin: 0 auto 16px auto;
   font-size: 16px;
-  width: 60%;
+  width: 64%;
   border: 1px solid #e8e6e4;
-  padding: 0 2px;
+  padding: 2px;
   height: 72px;
 }
 
