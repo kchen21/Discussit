@@ -1,5 +1,5 @@
 <section class="comments-show">
-  <h2><%= @comment.author.username %>'s Comment</h2>
+  <h2>Comment Details</h2>
   <p class="subforum">Subforum: <%= @subforum.title %></p>
 
   <section class="post">
@@ -33,7 +33,6 @@
       </ul>
 
       <section class="new-response">
-        <h3>Write a Response</h3>
         <%= render "form", comment: @child_comment %>
       </section>
     </section>

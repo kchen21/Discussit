@@ -23,8 +23,8 @@
 
 .comments-show > .post {
   display: block;
-  width: 60%;
-  min-width: 400px;
+  width: 80%;
+  min-width: 360px;
   border: 1px solid #000;
   border-radius: 4px;
   margin: 16px auto;
@@ -48,51 +48,65 @@
   font-size: 12px;
 }
 
-.comments-show > p {
-  margin: 16px auto;
-}
-
-.comments-show > a {
-  display: inline-block;
-  padding: 0 16px;
-  color: #000;
-}
-
-.comments-show > a:hover {
-  text-decoration: underline;
-}
-
-.comments-show > .responses {
+.comments-show > .comment {
   display: block;
   width: 80%;
-  min-width: 400px;
+  min-width: 360px;
   border: 1px solid #000;
   border-radius: 4px;
   margin: 16px auto;
 }
 
-.comments-show > .responses > h3 {
+.comments-show > .comment > h3 {
   display: block;
   background-color: aquamarine;
 }
 
-.comments-show > .responses li {
+.comments-show > .comment > p {
+  margin: 16px auto;
+}
+
+.comments-show > .comment > a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #000;
+}
+
+.comments-show > .comment > a:hover {
+  text-decoration: underline;
+}
+
+.comments-show > .comment > .responses {
+  display: block;
+  width: 80%;
+  min-width: 324px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.comments-show > .comment > .responses > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-show > .comment > .responses li {
   font-style: italic;
   color: #7d7c7b;
   margin: 12px auto;
   font-size: 12px;
 }
 
-.comments-show > .responses li > a {
+.comments-show > .comment > .responses li > a {
   color: #000;
   font-size: 16px;
 }
 
-.comments-show > .responses li > a:hover {
+.comments-show > .comment > .responses li > a:hover {
   text-decoration: underline;
 }
 
-.comments-show > .responses .comment-score {
+.comments-show > .comment > .responses .comment-score {
   color: #7d7c7b;
   font-size: 12px;
 }
@@ -112,11 +126,13 @@
 
 .comments-show .new-response textarea {
   display: block;
-  width: 299px;
+  width: 80%;
+  min-width: 291.6px;
   height: 72px;
   margin: 0 auto;
   border: 1px solid #e8e6e4;
   font-size: 16px;
+  padding: 2px;
 }
 
 .comments-show .new-response #submit {
