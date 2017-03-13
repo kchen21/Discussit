@@ -14,17 +14,35 @@
   text-align: center;
 }
 
-.sign-up-form > input {
+.sign-up-form > .input-field {
   display: block;
+  width: 307px;
+  height: 18px;
   margin: 16px auto;
+}
+
+.sign-up-form > .input-field > label {
+  display: inline-block;
+  width: 100px;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.sign-up-form > .input-field > input {
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+  border: 1px solid #e8e6e4;
 }
 
 .sign-up-form > #submit {
+  display: block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 16px auto;
 }
 
 .sign-up-form > #submit:hover {

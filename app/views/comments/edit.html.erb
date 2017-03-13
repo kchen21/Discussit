@@ -1,12 +1,18 @@
-<h2>Edit Comment</h2>
-<%= button_to "Delete", subforum_post_comment_url(@subforum, @post, @comment), method: :delete %>
-<p>Subforum: <%= @subforum.title %></p>
+<section class="comments-edit">
+  <h2>Edit Comment</h2>
+  <%= button_to "Delete", subforum_post_comment_url(@subforum, @post, @comment), method: :delete %>
+  <p>Subforum: <%= @subforum.title %></p>
 
-<h3>Post<h3>
-<p><%= @post.title %></p>
-<p><%= @post.url %></p>
-<p><%= @post.body %></p>
+  <section class="post">
+    <h3>Original Post</h3>
+    <p class="title"><%= @post.title %></p>
+    <p class="url"><%= @post.url %></p>
+    <p><%= @post.body %></p>
+  </section>
 
-<%= render "form", comment: @comment %>
+  <%= render "form", comment: @comment %>
 
-<%= render "shared/errors" %>
+  <section class="errors">
+    <%= render "shared/errors" %>
+  </section>
+</section>

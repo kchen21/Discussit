@@ -9,31 +9,33 @@
     <p><%= @post.body %></p>
   </section>
 
-  <h3>Comment</h3>
-  <p><%= @comment.body %></p>
+  <section class="comment">
+    <h3>Comment</h3>
+    <p><%= @comment.body %></p>
 
-  <%= link_to "Edit comment", edit_subforum_post_comment_url(@subforum, @post, @comment) %>
-  <%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
+    <%= link_to "Edit comment", edit_subforum_post_comment_url(@subforum, @post, @comment) %>
+    <%= link_to "See all comments", subforum_post_url(@subforum, @post) %>
 
-  <section class="responses">
-    <h3>Responses</h3>
-    <ul>
-      <% @child_comments.each do |comment| %>
-        <% if comment.id %> <!-- excludes the new comment -->
-          <li>
-            <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
-            <%= comment.author.username %>
-            <section class="comment-score">
-              Points: (<%= comment.points %>)
-            </section>
-          </li>
+    <section class="responses">
+      <h3>Responses</h3>
+      <ul>
+        <% @child_comments.each do |comment| %>
+          <% if comment.id %> <!-- excludes the new comment -->
+            <li>
+              <%= link_to comment.create_preview, subforum_post_comment_url(@subforum, @post, comment) %>
+              <%= comment.author.username %>
+              <section class="comment-score">
+                Points: (<%= comment.points %>)
+              </section>
+            </li>
+          <% end %>
         <% end %>
-      <% end %>
-    </ul>
+      </ul>
 
-    <section class="new-response">
-      <h3>Write a Response</h3>
-      <%= render "form", comment: @child_comment %>
+      <section class="new-response">
+        <h3>Write a Response</h3>
+        <%= render "form", comment: @child_comment %>
+      </section>
     </section>
   </section>
 

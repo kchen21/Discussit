@@ -240,3 +240,120 @@
 .comments-new > a:hover {
   text-decoration: underline;
 }
+
+/*edit*/
+
+.comments-edit {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 400px;
+  margin: 45px auto;
+  text-align: center;
+  position: relative;
+}
+
+.comments-edit > h2 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-edit > .button_to > input {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: 0 1px 1px #888888;
+  background-color: #fff;
+}
+
+.comments-edit > .button_to > input:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.comments-edit > p {
+  font-size: 12px;
+  margin: 12px auto;
+}
+
+.comments-edit > .post {
+  display: block;
+  width: 80%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.comments-edit > .post > h3 {
+  display: block;
+  background-color: aquamarine;
+}
+
+.comments-edit > .post > p {
+  margin: 12px auto;
+}
+
+.comments-edit > .post > .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comments-edit > .post > .url {
+  font-size: 12px;
+}
+
+.comments-edit > form > label {
+  display: block;
+  margin: 16px auto 0 auto;
+  font-weight: bold;
+}
+
+.comments-edit > form > textarea {
+  display: block;
+  margin: 0 auto 16px auto;
+  font-size: 16px;
+  width: 60%;
+  border: 1px solid #e8e6e4;
+  padding: 0 2px;
+  height: 72px;
+}
+
+.comments-edit > form > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.comments-edit > form > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.comments-edit > .errors > ul {
+  margin: 16px;
+}
+
+.comments-edit > .errors li {
+  text-align: center;
+  color: coral;
+  font-style: italic;
+}
+
+.comments-edit > a {
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  color: #000;
+}
+
+.comments-edit > a:hover {
+  text-decoration: underline;
+}

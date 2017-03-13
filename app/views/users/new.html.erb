@@ -4,15 +4,30 @@
   <form class="sign-up-form" action="<%= users_url %>" method="post">
     <%= auth_token %>
 
-    <input id="first-name" type="text" name="user[first_name]" value="" placeholder="first name">
+    <section class="input-field">
+      <label for="first-name">First name</label>
+      <input id="first-name" type="text" name="user[first_name]" value="">
+    </section>
 
-    <input id="last-name" type="text" name="user[last_name]" value="" placeholder="last name">
+    <section class="input-field">
+      <label for="last-name">Last name</label>
+      <input id="last-name" type="text" name="user[last_name]" value="">
+    </section>
 
-    <input id="email" type="text" name="user[email]" value="" placeholder="email">
+    <section class="input-field">
+      <label for="email">Email</label>
+      <input id="email" type="text" name="user[email]" value="">
+    </section>
 
-    <input id="username" type="text" name="user[username]" value="" placeholder="username">
+    <section class="input-field">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="user[username]" value="">
+    </section>
 
-    <input id="password" type="password" name="user[password]" value="" placeholder="password">
+    <section class="input-field">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="user[password]" value="">
+    </section>
 
     <input id="submit" type="submit" value="Sign up">
   </form>
