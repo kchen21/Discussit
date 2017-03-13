@@ -164,9 +164,10 @@
 
 .subforums-new .input-field > input {
   display: inline-block;
-  width: 264px;
+  width: 260px;
   font-size: 16px;
   border: 1px solid #e8e6e4;
+  padding: 2px;
 }
 
 .subforums-new > form > label {
@@ -182,7 +183,7 @@
   height: 72px;
   border: 1px solid #e8e6e4;
   font-size: 16px;
-  padding: 0 2px;
+  padding: 2px;
 }
 
 .subforums-new > form > #submit {
@@ -271,9 +272,10 @@
 
 .subforums-edit .input-field > input {
   display: inline-block;
-  width: 264px;
+  width: 260px;
   font-size: 16px;
   border: 1px solid #e8e6e4;
+  padding: 2px;
 }
 
 .subforums-edit > form > label {
@@ -289,7 +291,7 @@
   height: 72px;
   border: 1px solid #e8e6e4;
   font-size: 16px;
-  padding: 0 2px;
+  padding: 2px;
 }
 
 .subforums-edit > form > #submit {

@@ -30,9 +30,10 @@
 
 .sign-up-form > .input-field > input {
   display: inline-block;
-  width: 200px;
+  width: 196px;
   font-size: 16px;
   border: 1px solid #e8e6e4;
+  padding: 2px;
 }
 
 .sign-up-form > #submit {
@@ -92,9 +93,10 @@
 
 .account-update-form > .input-field > input {
   display: inline-block;
-  width: 200px;
+  width: 196px;
   font-size: 16px;
   border: 1px solid #e8e6e4;
+  padding: 2px;
 }
 
 .account-update-form > #submit {

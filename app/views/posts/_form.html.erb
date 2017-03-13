@@ -7,18 +7,18 @@
   <%= auth_token %>
   <input type="hidden" name="_method" value="<%= http_method %>">
 
-  <section class="input-field">
+  <section class="title-input-field">
     <label for="title">Title</label>
-    <input id="title" type="text" name="post[title]" value="<%= post.title %>" placeholder="title">
+    <input id="title" type="text" name="post[title]" value="<%= post.title %>">
   </section>
 
-  <section class="input-field">
-    <label for="url">URL</label>
-    <input id="url" type="text" name="post[url]" value="<%= post.url %>" placeholder="url (optional)">
+  <section class="url-input-field">
+    <label for="url">URL (Optional)</label>
+    <input id="url" type="text" name="post[url]" value="<%= post.url %>">
   </section>
 
   <label for="body">Body</label>
-  <textarea id="body" name="post[body]" placeholder="body"><%= post.body %></textarea>
+  <textarea id="body" name="post[body]"><%= post.body %></textarea>
 
   <input id="submit" type="submit" value="Submit">
 </form>
