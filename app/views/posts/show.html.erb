@@ -5,7 +5,7 @@
 
   <section class="info">
     <p>Subforum: <%= @subforum.title %></p>
-    <p>URL: <%= url == "" ? "None" : url %></p>
+    <p>URL: <a href="http://<%= url %>"><%= url %></a></p>
   </section>
 
   <p><%= @post.body %></p>

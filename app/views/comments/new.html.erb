@@ -5,7 +5,7 @@
   <section class="post">
     <h3>Original Post</h3>
     <p class="title"><%= @post.title %></p>
-    <p class="url"><%= @post.url %></p>
+    <p class="url">URL: <a href="http://<%= @post.url %>"><%= @post.url %></a></p>
     <p><%= @post.body %></p>
   </section>
 
