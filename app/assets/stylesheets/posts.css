@@ -212,18 +212,40 @@
   padding: 2px;
 }
 
-.posts-new > form > #submit {
+.posts-new > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.posts-new > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.posts-new > form > #submit:hover {
+.posts-new > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.posts-new > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.posts-new > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 
@@ -322,18 +344,40 @@
   padding: 2px;
 }
 
-.posts-edit > form > #submit {
+.posts-edit > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.posts-edit > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.posts-edit > form > #submit:hover {
+.posts-edit > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.posts-edit > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.posts-edit > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 

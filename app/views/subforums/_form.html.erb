@@ -15,7 +15,10 @@
   <label for="form-description">Description (Optional)</label>
   <textarea id="description" name="subforum[description]"><%= subforum.description %></textarea>
 
-  <input id="submit" type="submit" value="Submit">
+  <section class="buttons">
+    <input id="submit" type="submit" value="Submit">
+    <%= link_to "Cancel", request.referrer.present? ? request.referrer : default_path %>
+  </section>
 </form>
 
 <section class="errors">

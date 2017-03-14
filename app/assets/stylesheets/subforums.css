@@ -186,18 +186,40 @@
   padding: 2px;
 }
 
-.subforums-new > form > #submit {
+.subforums-new > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.subforums-new > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.subforums-new > form > #submit:hover {
+.subforums-new > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.subforums-new > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.subforums-new > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 
@@ -209,17 +231,6 @@
   text-align: center;
   color: coral;
   font-style: italic;
-}
-
-.subforums-new > a {
-  display: block;
-  margin: 16px auto;
-  text-align: center;
-  color: cornflowerblue;
-}
-
-.subforums-new > a:hover {
-  text-decoration: underline;
 }
 
 /*edit*/
@@ -294,18 +305,40 @@
   padding: 2px;
 }
 
-.subforums-edit > form > #submit {
+.subforums-edit > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.subforums-edit > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.subforums-edit > form > #submit:hover {
+.subforums-edit > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.subforums-edit > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.subforums-edit > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 

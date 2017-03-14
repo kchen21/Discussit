@@ -20,7 +20,10 @@
   <label for="body">Body</label>
   <textarea id="body" name="post[body]"><%= post.body %></textarea>
 
-  <input id="submit" type="submit" value="Submit">
+  <section class="buttons">
+    <input id="submit" type="submit" value="Submit">
+    <%= link_to "Cancel", request.referrer.present? ? request.referrer : default_path %>
+  </section>
 </form>
 
 <section class="errors">

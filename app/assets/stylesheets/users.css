@@ -126,6 +126,10 @@
   color: #000;
 }
 
+.account-update-form > a:hover {
+  background-color: aquamarine;
+}
+
 .account-update > .errors > ul {
   margin: 16px;
 }
