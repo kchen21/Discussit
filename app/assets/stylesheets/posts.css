@@ -59,7 +59,7 @@
 .posts-show > .comments {
   display: block;
   width: 80%;
-  min-width: 320px;
+  min-width: 384px;
   text-align: left;
   border: 1px solid #000;
   border-radius: 4px;
