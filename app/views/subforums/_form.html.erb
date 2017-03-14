@@ -17,7 +17,11 @@
 
   <section class="buttons">
     <input id="submit" type="submit" value="Submit">
-    <%= link_to "Cancel", request.referrer.present? ? request.referrer : default_path %>
+    <% if subforum.persisted? %>
+      <%= link_to "Cancel", subforum_url(subforum) %>
+    <% else %>
+      <%= link_to "Cancel", subforums_url %>
+    <% end %>
   </section>
 </form>
 

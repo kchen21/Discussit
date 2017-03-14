@@ -9,7 +9,7 @@
     <p><%= @post.body %></p>
   </section>
 
-  <%= render "form", comment: @comment %>
+  <%= render "form", subforum: @subforum, post: @post, comment: @comment %>
 
   <section class="errors">
     <%= render "shared/errors" %>
