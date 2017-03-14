@@ -48,6 +48,14 @@
   font-size: 12px;
 }
 
+.comments-show > .post > .url > a {
+  color: cornflowerblue;
+}
+
+.comments-show > .post > .url > a:hover {
+  text-decoration: underline;
+}
+
 .comments-show > .comment {
   display: block;
   width: 80%;
@@ -207,6 +215,14 @@
   font-size: 12px;
 }
 
+.comments-new > .post > .url > a {
+  color: cornflowerblue;
+}
+
+.comments-new > .post > .url > a:hover {
+  text-decoration: underline;
+}
+
 .comments-new > form label {
   display: none;
 }
@@ -320,6 +336,14 @@
 
 .comments-edit > .post > .url {
   font-size: 12px;
+}
+
+.comments-edit > .post > .url > a {
+  color: cornflowerblue;
+}
+
+.comments-edit > .post > .url > a:hover {
+  text-decoration: underline;
 }
 
 .comments-edit > form > label {

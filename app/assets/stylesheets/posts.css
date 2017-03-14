@@ -21,6 +21,14 @@
   margin: 12px auto;
 }
 
+.posts-show > .info > p > a {
+  color: cornflowerblue;
+}
+
+.posts-show > .info > p > a:hover {
+  text-decoration: underline;
+}
+
 .posts-show > p {
   margin: 16px auto;
 }
