@@ -12,5 +12,8 @@
   <label for="body">Comment</label>
   <textarea id="body" name="comment[body]" placeholder="Write a response..."><%= comment.body %></textarea>
 
-  <input id="submit" type="submit" value="Submit">
+  <section class="buttons">
+    <input id="submit" type="submit" value="Submit">
+    <%= link_to "Cancel", request.referrer.present? ? request.referrer : default_path %>
+  </section>
 </form>

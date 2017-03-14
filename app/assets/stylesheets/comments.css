@@ -158,6 +158,10 @@
   background-color: aquamarine;
 }
 
+.comments-show .new-response a {
+  display: none;
+}
+
 .comments-show > .errors > ul {
   margin: 16px;
 }
@@ -237,18 +241,40 @@
   height: 72px;
 }
 
-.comments-new > form > #submit {
+.comments-new > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.comments-new > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.comments-new > form > #submit:hover {
+.comments-new > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.comments-new > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.comments-new > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 
@@ -362,18 +388,40 @@
   height: 72px;
 }
 
-.comments-edit > form > #submit {
+.comments-edit > form > .buttons {
   display: block;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.comments-edit > form > .buttons > #submit {
+  display: inline-block;
   border: 1px solid #e8e6e4;
   border-radius: 4px;
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
-  margin: 16px auto;
+  margin: 0 4px;
 }
 
-.comments-edit > form > #submit:hover {
+.comments-edit > form > .buttons > #submit:hover {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.comments-edit > form > .buttons > a {
+  display: inline-block;
+  width: 49.8px;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  color: #000;
+  margin: 0 4px;
+}
+
+.comments-edit > form > .buttons > a:hover {
   background-color: aquamarine;
 }
 
