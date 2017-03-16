@@ -2,7 +2,7 @@
 
 [Discussit live][heroku]
 
-[heroku]: 
+[heroku]: http://discussitonline.herokuapp.com
 
 Discussit is a simple forum for discussion built using Ruby on Rails. It uses a PostgreSQL database to store data.
 
