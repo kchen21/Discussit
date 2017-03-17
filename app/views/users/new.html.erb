@@ -36,3 +36,12 @@
     <%= render "shared/errors" %>
   </section>
 </section>
+
+<form class="guest-button" action="<%= session_url %>" method="post">
+  <%= auth_token %>
+
+  <input type="hidden" name="user[username]" value="Guest">
+  <input type="hidden" name="user[password]" value="123456">
+
+  <input id="submit" type="submit" value= "Log in as Guest">
+</form>

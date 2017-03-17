@@ -19,5 +19,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: redirect("/subforums")
+  root to: redirect("/users/new")
 end

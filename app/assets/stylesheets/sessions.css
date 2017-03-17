@@ -5,7 +5,7 @@
   border: 1px solid #000;
   border-radius: 4px;
   width: 400px;
-  margin: 45px auto;
+  margin: 45px auto 0 auto;
 }
 
 .log-in > h2 {
@@ -59,4 +59,23 @@
   text-align: center;
   color: coral;
   font-style: italic;
+}
+
+.guest-button {
+  margin: 32px auto;
+}
+
+.guest-button > #submit {
+  display: block;
+  border: 1px solid #e8e6e4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 5px #888888;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.guest-button > #submit:hover {
+  cursor: pointer;
+  background-color: aquamarine;
 }
