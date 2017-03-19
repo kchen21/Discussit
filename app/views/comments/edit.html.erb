@@ -7,7 +7,7 @@
     <h3>Original Post</h3>
     <p class="title"><%= @post.title %></p>
     <% url = @post.url %>
-    <% if url %>
+    <% if url && url != "" %>
       <p class="url">URL: <a href="http://<%= url %>"><%= url %></a></p>
     <% else %>
       <p class="url">URL: None</p>

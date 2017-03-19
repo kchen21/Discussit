@@ -5,7 +5,7 @@
 
   <section class="info">
     <p>Subforum: <%= @subforum.title %></p>
-    <% if url %>
+    <% if url && url != "" %>
       <p>URL: <a href="http://<%= url %>"><%= url %></a></p>
     <% else %>
       <p>URL: None</p>
