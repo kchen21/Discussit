@@ -5,7 +5,11 @@
 
   <section class="info">
     <p>Subforum: <%= @subforum.title %></p>
-    <p>URL: <a href="http://<%= url %>"><%= url %></a></p>
+    <% if url %>
+      <p>URL: <a href="http://<%= url %>"><%= url %></a></p>
+    <% else %>
+      <p>URL: None</p>
+    <% end %>
   </section>
 
   <p><%= @post.body %></p>

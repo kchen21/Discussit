@@ -6,7 +6,12 @@
   <section class="post">
     <h3>Original Post</h3>
     <p class="title"><%= @post.title %></p>
-    <p class="url">URL: <a href="http://<%= @post.url %>"><%= @post.url %></a></p>
+    <% url = @post.url %>
+    <% if url %>
+      <p class="url">URL: <a href="http://<%= url %>"><%= url %></a></p>
+    <% else %>
+      <p class="url">URL: None</p>
+    <% end %>
     <p><%= @post.body %></p>
   </section>
 
