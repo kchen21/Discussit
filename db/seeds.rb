@@ -24,4 +24,52 @@ Comment.create!(body: 'I have the heart of a lion and a lifetime ban from the Br
 Comment.create!(body: 'I just read a book about Stockholm Syndrome. It was pretty bad at first, but, by the end, I liked it.', author_id: 3, post_id: 1) # id: 6
 Comment.create!(body: 'A blind man walks into a bar. And a table. And a chair.', author_id: 5, post_id: 1) # id: 7
 Comment.create!(body: 'A man walks into a bar. Then another man walks into it. The third man ducks.', author_id: 2, post_id: 1, parent_comment_id: 7) # id: 8
-Comment.create!(body: 'Why did Star Wars episodes 4, 5, and 6 come before 1, 2, and 3? Because in charge of scheduling, Yoda was.', author_id: 4, post_id: 1)
+Comment.create!(body: 'Why did Star Wars episodes 4, 5, and 6 come before 1, 2, and 3? Because in charge of scheduling, Yoda was.', author_id: 4, post_id: 1) # id: 9
+
+@post = Post.find(1)
+@post.votes.create!(value: 1, user_id: 3)
+@post.votes.create!(value: 1, user_id: 4)
+@post.votes.create!(value: 1, user_id: 5)
+
+@comment1 = Comment.find(1)
+@comment1.votes.create!(value: 1, user_id: 3)
+@comment1.votes.create!(value: 1, user_id: 4)
+@comment1.votes.create!(value: 1, user_id: 5)
+
+@comment2 = Comment.find(2)
+@comment2.votes.create!(value: 1, user_id: 2)
+@comment2.votes.create!(value: 1, user_id: 4)
+@comment2.votes.create!(value: 1, user_id: 5)
+
+@comment3 = Comment.find(3)
+@comment3.votes.create!(value: 1, user_id: 2)
+@comment3.votes.create!(value: 1, user_id: 3)
+@comment3.votes.create!(value: 1, user_id: 5)
+
+@comment4 = Comment.find(4)
+@comment4.votes.create!(value: 1, user_id: 4)
+
+@comment5 = Comment.find(5)
+@comment5.votes.create!(value: 1, user_id: 2)
+@comment5.votes.create!(value: 1, user_id: 3)
+@comment5.votes.create!(value: 1, user_id: 4)
+
+@comment6 = Comment.find(6)
+@comment6.votes.create!(value: 1, user_id: 2)
+@comment6.votes.create!(value: 1, user_id: 4)
+@comment6.votes.create!(value: 1, user_id: 5)
+
+@comment7 = Comment.find(7)
+@comment7.votes.create!(value: 1, user_id: 2)
+@comment7.votes.create!(value: 1, user_id: 3)
+@comment7.votes.create!(value: 1, user_id: 4)
+
+@comment8 = Comment.find(8)
+@comment8.votes.create!(value: 1, user_id: 3)
+@comment8.votes.create!(value: 1, user_id: 4)
+@comment8.votes.create!(value: 1, user_id: 5)
+
+@comment1 = Comment.find(9)
+@comment1.votes.create!(value: 1, user_id: 2)
+@comment1.votes.create!(value: 1, user_id: 4)
+@comment1.votes.create!(value: 1, user_id: 5)
