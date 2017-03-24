@@ -14,10 +14,13 @@
 .comments-show > h2 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-show > .subforum {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   margin: 12px auto;
 }
 
@@ -33,10 +36,13 @@
 .comments-show > .post > h3 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-show > .post > p {
   margin: 12px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show > .post > .title {
@@ -51,6 +57,7 @@
 
 .comments-show > .post > .url > a {
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show > .post > .url > a:hover {
@@ -69,16 +76,21 @@
 .comments-show > .comment > h3 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-show > .comment > p {
   margin: 16px auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
 }
 
 .comments-show > .comment > a {
   display: inline-block;
   padding: 0 16px;
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show > .comment > a:hover {
@@ -97,18 +109,23 @@
 .comments-show > .comment > .responses > h3 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-show > .comment > .responses li {
-  font-style: italic;
   color: #7d7c7b;
   margin: 12px auto;
+  padding: 0 20px;
   font-size: 12px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show > .comment > .responses li > a {
   color: cornflowerblue;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show > .comment > .responses li > a:hover {
@@ -118,15 +135,12 @@
 .comments-show > .comment > .responses .comment-score {
   color: #7d7c7b;
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-show .new-response {
   display: block;
   margin: 16px auto;
-}
-
-.comments-show .new-response > h3 {
-  font-weight: bold;
 }
 
 .comments-show .new-response label {
@@ -141,6 +155,7 @@
   margin: 0 auto;
   border: 1px solid #e8e6e4;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   padding: 2px;
 }
 
@@ -151,6 +166,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   margin: 16px auto;
 }
 
@@ -171,6 +187,7 @@
   text-align: center;
   color: coral;
   font-style: italic;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*new*/
@@ -187,10 +204,13 @@
 .comments-new > h2 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-new > p {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   margin: 12px auto;
 }
 
@@ -205,10 +225,13 @@
 .comments-new > .post > h3 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-new > .post > p {
   margin: 12px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-new > .post > .title {
@@ -223,6 +246,7 @@
 
 .comments-new > .post > .url > a {
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-new > .post > .url > a:hover {
@@ -237,6 +261,7 @@
   display: block;
   margin: 16px auto;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   width: 64%;
   border: 1px solid #e8e6e4;
   padding: 2px;
@@ -256,6 +281,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   margin: 0 4px;
 }
 
@@ -272,6 +298,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #000;
   margin: 0 4px;
 }
@@ -288,17 +315,7 @@
   text-align: center;
   color: coral;
   font-style: italic;
-}
-
-.comments-new > a {
-  display: block;
-  margin: 16px auto;
-  text-align: center;
-  color: cornflowerblue;
-}
-
-.comments-new > a:hover {
-  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*edit*/
@@ -316,6 +333,8 @@
 .comments-edit > h2 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-edit > .button_to > input {
@@ -328,6 +347,7 @@
   padding: 1px;
   box-shadow: 0 1px 1px #888888;
   background-color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-edit > .button_to > input:hover {
@@ -337,6 +357,7 @@
 
 .comments-edit > p {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   margin: 12px auto;
 }
 
@@ -351,10 +372,13 @@
 .comments-edit > .post > h3 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .comments-edit > .post > p {
   margin: 12px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-edit > .post > .title {
@@ -369,6 +393,7 @@
 
 .comments-edit > .post > .url > a {
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comments-edit > .post > .url > a:hover {
@@ -378,6 +403,7 @@
 .comments-edit > form > label {
   display: block;
   margin: 16px auto 0 auto;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -385,6 +411,7 @@
   display: block;
   margin: 0 auto 16px auto;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   width: 64%;
   border: 1px solid #e8e6e4;
   padding: 2px;
@@ -404,6 +431,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   margin: 0 4px;
 }
 
@@ -420,6 +448,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #000;
   margin: 0 4px;
 }
@@ -436,15 +465,5 @@
   text-align: center;
   color: coral;
   font-style: italic;
-}
-
-.comments-edit > a {
-  display: block;
-  margin: 16px auto;
-  text-align: center;
-  color: #000;
-}
-
-.comments-edit > a:hover {
-  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
 }
