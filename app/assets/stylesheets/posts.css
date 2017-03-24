@@ -14,15 +14,22 @@
 .posts-show > h2 {
   display: block;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .posts-show > .info {
-  font-size: 12px;
   margin: 12px auto;
+}
+
+.posts-show > .info > p {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .info > p > a {
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .info > p > a:hover {
@@ -31,6 +38,7 @@
 
 .posts-show > p {
   margin: 16px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .button_to > input {
@@ -43,6 +51,7 @@
   padding: 1px;
   box-shadow: 0 1px 1px #888888;
   background-color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .button_to > input:hover {
@@ -54,6 +63,7 @@
   display: inline-block;
   padding: 0 16px;
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .comments {
@@ -70,6 +80,8 @@
   display: block;
   background-color: aquamarine;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .posts-show > .comments > ul {
@@ -81,15 +93,18 @@
   color: #7d7c7b;
   margin: 12px auto;
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show li > a {
   color: cornflowerblue;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .comments .comment-score {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .comments .comment-score > .button_to {
@@ -98,6 +113,10 @@
   border-radius: 4px;
   padding: 1px;
   box-shadow: 0 1px 1px #888888;
+}
+
+.posts-show > .comments .comment-score > .button_to > input {
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show > .comments .comment-score > .button_to > input:hover {
@@ -122,6 +141,7 @@
   color: cornflowerblue;
   margin: 16px auto;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-show a:hover {
@@ -136,6 +156,7 @@
   text-align: center;
   color: coral;
   font-style: italic;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*new*/
@@ -152,10 +173,13 @@
   display: block;
   background-color: aquamarine;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .posts-new > p {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   margin: 12px auto;
   text-align: center;
 }
@@ -170,6 +194,7 @@
   display: inline-block;
   width: 36px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -177,6 +202,7 @@
   display: inline-block;
   width: 260px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid #e8e6e4;
   padding: 2px;
 }
@@ -184,6 +210,7 @@
 .posts-new .url-input-field > label {
   display: inline-block;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -191,6 +218,7 @@
   display: block;
   width: 301px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid #e8e6e4;
   padding: 2px;
 }
@@ -199,6 +227,7 @@
   display: block;
   width: 307px;
   margin: 16px auto 0 auto;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -209,6 +238,7 @@
   height: 72px;
   border: 1px solid #e8e6e4;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   padding: 2px;
 }
 
@@ -225,6 +255,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   margin: 0 4px;
 }
 
@@ -241,6 +272,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #000;
   margin: 0 4px;
 }
@@ -257,6 +289,7 @@
   text-align: center;
   color: coral;
   font-style: italic;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-new > a {
@@ -264,6 +297,7 @@
   margin: 16px auto;
   text-align: center;
   color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .posts-new > a:hover {
@@ -284,10 +318,13 @@
   display: block;
   background-color: aquamarine;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .posts-edit > p {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   margin: 12px auto;
   text-align: center;
 }
@@ -302,6 +339,7 @@
   display: inline-block;
   width: 36px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -309,6 +347,7 @@
   display: inline-block;
   width: 260px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid #e8e6e4;
   padding: 2px;
 }
@@ -316,6 +355,7 @@
 .posts-edit .url-input-field > label {
   display: inline-block;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -323,6 +363,7 @@
   display: block;
   width: 301px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid #e8e6e4;
   padding: 2px;
 }
@@ -331,6 +372,7 @@
   display: block;
   width: 307px;
   margin: 16px auto 0 auto;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -341,6 +383,7 @@
   height: 72px;
   border: 1px solid #e8e6e4;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   padding: 2px;
 }
 
@@ -357,6 +400,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   margin: 0 4px;
 }
 
@@ -373,6 +417,7 @@
   padding: 2px 4px;
   box-shadow: 0 2px 5px #888888;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #000;
   margin: 0 4px;
 }
@@ -389,4 +434,5 @@
   text-align: center;
   color: coral;
   font-style: italic;
+  font-family: 'Roboto', sans-serif;
 }
